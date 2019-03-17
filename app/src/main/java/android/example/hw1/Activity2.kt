@@ -83,7 +83,7 @@ class MyTimer(val textView: TextView, val button: Button) : CountDownTimer(10000
 
                 }
             }
-            textView.text = "$s1 $s2 $s3"
+            textView.text = "$s1 $s2 $s3".replace("\\s+".toRegex(), " ")
         }
     }
 }

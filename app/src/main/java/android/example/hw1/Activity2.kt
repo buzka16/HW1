@@ -104,7 +104,6 @@ class Activity2 : AppCompatActivity() {
         button.setOnClickListener {
             timer.started = !timer.started
             if (timer.started) {
-                timer.time -= 1L
                 button.text = "Stop"
                 timer.start()
             } else {

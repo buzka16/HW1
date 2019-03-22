@@ -89,7 +89,7 @@ class MyTimer(val textView: TextView, val button: Button) : CountDownTimer(10000
 }
 
 class Activity2 : AppCompatActivity() {
-    lateinit var timer: MyTimer
+    private lateinit var timer: MyTimer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
